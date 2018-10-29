@@ -1,0 +1,188 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset = "utf-8">
+    <title> 1B_21861103_이현동_직무1 </title>
+    
+    <style>
+              
+         #wrapper { 
+                padding-top: 50pt;
+                max-width: 1000px;
+                margin: auto;
+            }      
+        #logo { 
+            display: inline-block;
+            position: fixed;
+            margin: 0;
+        }
+/*        메뉴*/
+        #menu {
+            float: right;
+        }
+        #menu li{
+            display:inline-block;
+            border-width : 1px 1px 1px 5px;
+            border-color : black;
+            border-style : solid;
+            background : -webkit-linear-gradient(bottom, #2a8cff, white);
+			text-align : center;
+            padding: 2px 15px 3px 15px;
+            margin: 0;
+            font-weight: bold;
+        }
+        #menu ul{
+            list-style:none;
+            margin-top: 5px;
+        }
+        #menu a{
+            text-decoration:none;
+            color: black;
+            padding: 3px; 
+        }
+        #menu ul :hover {
+            background : -webkit-linear-gradient(bottom, white, #2a8cff);
+        }
+        #section{
+            border : solid 2px #309efd;
+            padding: 30px;
+            margin : 0px 20% 0px 20%;
+        }
+        /*        사진 갤러리 효과*/
+        figcaption{
+            position : absolute;
+            top : 10%;
+            bottom :10%;
+            left : 10%;
+            right : 10%;
+            background : black ;
+            color : white;
+            padding : 20px;
+            opacity : 0;
+            -webkit-transition : opacity 0.5s; 
+            font-size: 20px;
+            text-align: center;
+        }
+        figure {
+            display : inline-block;
+            margin : 20px 10px 10px 10px;
+            position : relative;
+        }
+        figure:hover figcaption {
+            opacity : 1;
+        }
+/*        꼬리말*/
+        #footer {
+            border : 1px dotted #98afbe;
+            border-left : none;
+            border-right : none;
+            padding : 7px;
+            clear : both;
+        }
+/*        middle project*/
+        #title{
+            font-size: 100px;
+            text-shadow: 10px 40px 10px #98afbe;
+        }
+/*        전체 색상*/
+        body {
+            
+            background-color: rgba(183, 190, 191, 0.19);
+            
+        }
+        
+    </style>
+</head>
+<body>
+    
+<!--    헤더-->
+    <header>
+        <div id ="header">
+        <div id= "logo">
+                <a href="index.html">
+                <img src="./img/logo.png" width="45"> </a>
+        </div>
+            <nav>
+                 <div id = "menu">
+                    <ul>
+                        <li><a href="profile.html">Profile</a></li>
+                        <li><a href="Portfolio.html">Portfolio</a></li>
+                        <li><a href="hw01.html">Hw01</a></li>
+                        <li><a href="hw02.html">Hw02</a></li>
+                        <li><a href="hw03.html">Hw03</a></li>
+                        <li><a href="hw04.html">Hw04</a></li>
+                        <li><a href="hw05.html">Hw05</a></li>
+                    </ul>    
+                </div>
+            </nav>
+        </div>
+    </header>
+
+<!--    메인-->
+    
+    <div id ="wrapper">
+        <p id="title">
+        Middle Project Portfolio.
+        </p>
+        <figure>
+            <img src="./img/work1.jpg" width="800">
+            <figcaption><br>
+                작품명 : 자세히 보아야 예쁘다.
+                <br><br><br><br>
+                3D Max,
+                <br><br>
+                iPhone 5S
+                <br><br>
+                Modelling
+                <br><br>
+                3D Design
+                <br><br>
+                Middle Project
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="./img/work2.jpg" width="800">
+            <figcaption><br>
+                작품명 : 삼성 이재용도 아이폰 사용합니다.
+                <br><br><br><br>
+                3D Max,
+                <br><br>
+                iPhone 5S
+                <br><br>
+                Modelling
+                <br><br>
+                3D Design
+                <br><br>
+                Middle Project
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="./img/work3.jpg" width="800">
+            <figcaption><br>
+                작품명 : 아이스도그.
+                <br><br><br><br>
+                3D Max,
+                <br><br>
+                스크류바
+                <br><br>
+                Modelling
+                <br><br>
+                3D Design
+                <br><br>
+                Middle Project
+            </figcaption>
+        </figure>
+        <img src="./img/work4.jpg" width="800">   
+    </div>
+    
+    <footer>
+        <div id = "footer">
+                <h6>
+                    <p>.Copyright B_21861103_이현동</p>
+                </h6>
+            </div>
+    </footer>
+    
+</body>
+</html>
+

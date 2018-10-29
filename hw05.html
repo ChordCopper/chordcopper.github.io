@@ -1,0 +1,438 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset = "utf-8">
+    <title> [B반]콘텐츠프로그래밍 6주차_21861103_이현동 </title>
+    <style>
+        
+        #wrapper { 
+                padding-top: 50pt;
+                max-width: 1000px;
+                margin: auto;
+            }
+/*      로고 고정*/
+            #logo { 
+                display: inline-block;
+                position: fixed;
+                margin: 0;
+            }
+/*        메뉴*/
+            #menu {
+                float: right;
+                padding-top: 0px;
+            }
+            #menu li{
+                display:inline-block;
+                border-width : 1px 1px 1px 5px;
+                border-color : black;
+                border-style : solid;
+                background : -webkit-linear-gradient(bottom, #2a8cff, white);
+                text-align : center;
+                padding: 2px 15px 3px 15px;
+                margin: 0;
+                font-weight: bold;
+            }
+            #menu ul{
+                list-style:none;
+                margin-top: 5px;
+            }
+            #menu a{
+                text-decoration:none;
+                color: black;
+                padding: 3px; 
+            }
+            #menu ul :hover {
+                background : -webkit-linear-gradient(bottom, white, #2a8cff);
+            }
+/*        전체 여백*/
+        #main{
+            margin : 10%;
+        }
+        #top{
+            border : solid 2px #309efd;
+            padding: 5px;
+            color: #309efd;
+        }
+        .top_name {
+            color:  #2a8cff;
+            font-size: 1.5em;
+            font-weight: bold;
+            line-height: 20px;
+        }
+        .section {
+            padding : 20px;
+            margin: 10px;
+            border : dashed 1px black;
+            width: 90%;
+            float: left;
+        }
+        #footer {
+            border : 1px dotted #98afbe;
+            border-left : none;
+            border-right : none;
+            padding : 7px;
+            clear : both;
+        }
+/*        표*/
+        table {
+            
+            border: 1px dotted #2a8cff;
+            
+        }
+        table th {
+            
+            background-color: #2a8cff    
+            
+        }
+        
+/*        이미지 효과*/
+        #img img{
+            border :1px solid black;
+            box-shadow : 2px 2px 4px black;
+            padding : 4px;
+        }
+        figcaption{
+            position : absolute;
+            top : 20%;
+            bottom :20%;
+            left : 0;
+            right : 0;
+            background : #2a8cff ;
+            color : white;
+            padding : 20px;
+            opacity : 0;
+            -webkit-transition : opacity 1s;   
+        }
+/*        사진 갤러리 효과*/
+/*
+        figure는 사진에 달리는 캡션,
+        display : inline-block;
+        position : relative;
+        position : absolute;를 통한 캡션의 위치 변경,
+        opacity에 차이를 주어 hover 후 캡션이 보이게 함
+        -webkit-transition, 애니메이션 속도, 
+*/
+        
+        figure {
+            display : inline-block;
+            margin : 20px 10px 10px 10px;
+            position : relative;
+        }
+        figure:hover figcaption {
+            opacity : 1;
+        }
+        
+/*        목차 꾸미기*/
+        #nav {
+            margin : 5pt;
+            padding : 0;
+            list-style : none;
+            width : 175px;
+            border-bottom : 1px dashed #2a8cff;
+        }
+        #nav a {
+            color : #0075ff;
+            text-decoration : none;
+            border : 1px dashed #2a8cff;
+            padding : 7px 5px 7px 35px;
+            display : block;
+            border-bottom : none;
+            background : #daebff url(img/pin2.png) no-repeat;
+        }
+        #nav a:hover {
+            background : #bbdaff url(img/pin1.png) no-repeat;
+            font-weight : bold;
+        }
+        
+    </style>
+</head>
+<body>
+        
+<!--    헤더-->
+    <header>
+        <div id ="header">
+        <div id= "logo">
+                <a href="index.html">
+                <img src="./img/logo.png" width="45"> </a>
+        </div>
+<!--    메뉴-->
+         <div id = "menu">
+            <ul>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="Portfolio.html">Portfolio</a></li>
+                <li><a href="hw01.html">Hw01</a></li>
+                <li><a href="hw02.html">Hw02</a></li>
+                <li><a href="hw03.html">Hw03</a></li>
+                <li><a href="hw04.html">Hw04</a></li>
+                <li><a href="hw05.html">Hw05</a></li>
+            </ul>    
+        </div>
+        </div>      
+    </header>
+    
+<!--    메인이미지-->
+    <img src="./img/top_japan.jpg" alt="일본" width="100%">
+   <div id = "main">
+    <h1 id = "top">"Go to JAPAN"</h1>
+    
+<!--    목차 및 메뉴-->
+    <div class ="section">
+        <h2 class ="top_name">목차</h2>
+            <ol type="I" id="nav">
+                <li><a href = "#1">일본 소개</a></li>
+                <li><a href = "#2">언어</a></li>
+                <li><a href = "#3">준비물</a></li>
+                <li><a href = "#4">주요 도시</a></li>
+                <li><a href = "#5">일정</a></li>
+                <li><a href = "#6">사진</a></li>
+            </ol>
+    </div>
+    <!-- 본문 시작-->
+    <div class ="section">
+    <a class ="top_name">I. 일본 소개</a>
+        <p>
+            &nbsp;&nbsp;&nbsp;일본은 혼슈, 규슈, 시코쿠, 홋카이도 등 주요 네 섬과 기타 수천 개의 작은 섬으로 이루어진 동아시아의 섬나라이다.<br>
+            대한민국과는 대한-쓰시마 해협을 사이에 두고 비교적 가까이 위치하고 있으며, 이러한 지리상의 이유로 삼국시대부터 한반도의 여러 국가들과 크고 작은 교류를 해왔고, 한국과 경제•문화적으로 상당히 깊은 관계를 맺고 있다. 단 과거 일제강점기라는 수치나 영토분쟁 등으로 인해 정치/역사적인 면에서는 관계가 안좋은 점도 존재한다.
+            <br>
+            <br>
+            1945년 태평양 전쟁에서 미국이 일본의 히로시마, 나가사키에 원폭 투하로 8월 15일에 패망한 뒤 수년 동안 국민소득이 미국의 1/10을 채 못 넘겼으나, 이후 6.25 전쟁으로 인한 전쟁특수, 소련을 견제하기 위한 미국의 경제 원조[25], 통산산업성(MITI)[26]을 중심으로 한 정부 주도의 산업 정책 등을 통해 고도성장을 이룩하여 아시아 최고의 선진국이 되었고,[27] 미국 다음가는 세계 2위의 경제 선진국이 되었다.(일본은 1968년에 서독을 제치고 세계 2위 경제대국에 올라섰다. 1970년 영어 위키백과 자료 #) 일본의 1인당 GDP는 유럽의 전통적 선진국인 프랑스, 영국은 물론 미국(!)도 능가했었다. 하지만 2017년 10월에 발표된 최신 자료에 따르면 프랑스와 영국에게 추월당한 것으로 보인다.# 한편 1990년대부터 시작된 이른바 잃어버린 20년으로 말미암아 경기 침체를 겪고 중국이 성장하면서 지금은 국내총생산 세계 3위, 외환보유고 2위를 기록, 아베노믹스 등의 경제 정책의 일환으로 2017년 경제성장률이 1.5%를 기록하여 잃어버린 10년 이후 처음으로 디플레이션에서 탈출하는 등, 사실상의 경기 회복에 성공하였다는 관측.[28] 2018년 출구전략을 확정하여 경제성장 기조를 이어가겠다는 방침이다.
+            <br>
+            <br>
+            인구 세계 11위, GDP 3위 네이버 GDP IMF 순위 다음 GDP IMF 순위, PPP 4위, 특별인출권으로 지정된 엔화[29], 26년째 부동의 세계 최대 대외채권국#이자 미국과 무제한 통화 스와프 협정을 맺은 5개국 중 하나[30], IMF, 세계은행 투표권 2위[31], 외환보유고 2위 #, 금 보유고 8위 #, 무역 총합 5위 # 등을 통해 세계 경제 및 외교에 큰 영향력을 행사하고 있다. 현재 아시아에서 유일하게 G7에 포함되어 있다. 
+            <br>
+            <br>
+            군사력에 대해서는, 2차 세계대전에서 패전한 이후 군대를 해체당하고 자위대만을 보유한 채 국방을 서방 국가(특히 미국 주일미군)에 의지하는 부분이 크고, 자위대는 근본적으론 정식 군대를 지원하는 개념에 가깝다. 그러나 자위대가 보유한 전력 자체는 막강하고 국방비 지출은 세계 8위를 기록하고 있다.
+            <br>
+            <br>
+            최근에는 아베 신조 집권 이후 중국을 견제하고 국방비 부담을 줄이려는 서구 사회와 전략이 맞물려 일본의 재무장을 위한 개헌을 시도하고 있다. 유럽과 미국은 과거부터 '일본이 군대가 없다는 핑계로 안보에 무임승차한다'는 불만을 제기했던 참에 아베 정권이 재무장을 시도하자 크게 환영하고 있다. 연합뉴스 기사에서는 국방비 8위라고 한다.
+        </p>
+    </div>
+    <div class ="section">
+    <a class ="top_name" id = "2">II. 언어</a><br><br>
+         <img src="./img/히라.jpg" alt="언어" >
+        <p>
+            &nbsp;&nbsp;&nbsp;일본어를 쓴다. 일본은 자국 공용어를 법으로 못박지 않은 나라지만 사실상 일본어가 공용어 역할을 한다.
+            <br>
+            오키나와에서는 류큐어라는 언어가 쓰이기도 하는데, 일본어의 방언으로 보기도 하지만 본토의 일본어 및 그 방언들과 상호소통되지 않아 별도의 언어로 보기도 한다. 홋카이도에서는 아이누 민족을 중심으로 아이누어가 쓰이기도 한다.
+        </p>
+    </div>
+    <div class ="section">
+    <a class ="top_name" id = "3">III. 준비물</a>
+        <p>
+            &nbsp;&nbsp;&nbsp;<del>꿈과 열정, 희망이 있다면 그 무언들 못하리.</del>
+            <br>
+            <br>
+            <ul>
+<!--                리스트-->
+                <li><h5>여권</h5>
+                    기본적인 필수 준비물
+                </li>
+                <li><h5>여행 회화책</h5>
+                    생존에 필요한 필수 회화가 적힌 얇은 책 정도는 구비해서 가도록 하자
+                </li>
+                <li><h5>220V 변환 어댑터</h5>
+                    <img src="./img/vol.jpg" alt="변압기" >
+                    <br>
+                    일본은 110V를 사용하기 때문에 또한 필수적으로 가져가도록 하자
+                </li>
+                <li><h5>여분 옷</h5>
+                    돈이 아주 많아서 매일 새로운 옷을 살것이 아니라면 여분 옷을 들고 가도록 하자
+                </li>
+                <li><h5>충분한 엔화</h5>
+                    미리 환전해서 일본의 화폐인 ¥을 준비 하자
+                    <br>
+                    <br>
+                    ¥ (국제적)<br>
+                    円 (일본—오늘날)<br>
+                    圓 (일본—전통적)
+                </li>
+                <li><h5>각종 패스/티켓</h5>
+                    한국에서 미리 구매해 가면 편하다.
+                    <br><b>단,</b> 미리 구매해놓고 두고 가는 불상사는 없도록 하자
+                </li>
+            </ul>
+        </p>
+    </div>
+    <div class ="section">
+        <a class ="top_name" id = "4">IV. 주요 도시</a>
+            <p>&nbsp;&nbsp;&nbsp;보통 일본의 10대 도시라고 하면 도쿄, 요코하마, 오사카, 나고야, 삿포로, 고베, 교토, 후쿠오카, 히로시마, 센다이 를 꼽는다.
+            </p>
+<!--        표-->
+        <table border="1">
+            <tr>
+                <th rowspan="2">순위</th>
+                <th rowspan="2">지방</th>
+                <th rowspan="2">도도부현</th>
+                <th rowspan="2">시</th>
+                <th rowspan="2">법정인구(명)</th>
+                <th rowspan="2">면적(km<sup>2</sup>)</th>
+                <th colspan="2">인구밀도</th>
+            </tr>
+            <tr>
+                <th>법정</th>
+                <th>추계</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>간토</td>
+                <td>도쿄도</td>
+                <td>23특별구</td>
+                <td>9,272,740</td>
+                <td>626.70</td>
+                <td>14,796</td>
+                <td>15,173</td>
+            </tr>
+             <tr>
+                <td>2</td>
+                <td>간토</td>
+                <td>가나가와현</td>
+                <td>오코하마시</td>
+                <td>3,724,844</td>
+                <td>437.56</td>
+                <td>8,513</td>
+                <td>8,528</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>간사이</td>
+                <td>오사카부</td>
+                <td>오사카시</td>
+                <td>2,691,185</td>
+                <td>225.21</td>
+                <td>11,950</td>
+                <td>12,064</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>주부</td>
+                <td>아이치현</td>
+                <td>나고야시</td>
+                <td>2,295,638</td>
+                <td>326.45</td>
+                <td>7,032</td>
+                <td>7,080</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>훗카이도</td>
+                <td>훗카이도</td>
+                <td>삿포로시</td>
+                <td>1,952,356</td>
+                <td>1,121.56</td>
+                <td>1,741</td>
+                <td>1,740</td>
+            </tr>
+    </table>
+    <p>
+        100만 이상의 도시가 의외로 12개뿐이다. 인구가 일본의 절반도 안 되는 우리나라의 100만 명 이상 도시가 11개임을 감안하면... 50만 이상의 도시도 일본은 29개인데 우리나라의 22개와 얼마 차이가 나지 않는다. 도시권에 인구가 모여 사는 우리나라와 마찬가지로 인구편중이 심한 편이다. 도쿄권에 4,000만 명쯤 되는 인구가 거주하고 게이한신 지역도 거의 2,000만 명에 이르기 때문에 지역간의 격차가 심하기는 하다. 하지만 면적에 비해 인구가 적은 홋카이도를 제외하면, 인구 절반이 수도권에 집중된 한국보다는 체감적으로 전 국토에 고르게 인구가 분포한다고 볼 수 있다. 그렇지만, 최근 들어 수도권으로 인구가 집중되는 현상(東京一極集中)이 가속화되어, 지방이 쇠퇴한다는 우려의 목소리가 나오고 있다. 아베 신조내각은, 수도권 인구집중을 막는 지방창생(地方創生)정책을 실시중이지만, 뚜렷한 효과는 보이지 않고 있다.
+        <br>
+        <br>
+        한편 한국에게 꽤 인지도가 있는 나가사키 현의 나가사키 시는 인구가 443,926명(2010년 기준)에 그치는 현청 소재지이다. 2016년 2월 기준으로는 431,998명으로 더욱 감소했다. 2010년 당시 일본 전체 38위. 이는 오이타(현청소재지, 47만명, 34위), 카나자와(46만명, 35위)에 뒤지는 것이다. 기후시는 44위, 동계올림픽이 열렸던 나가노 시(인구 38만)는 50위.
+        <br>
+        <br>
+        도쿄 도의 총 인구는 13,512,186(2016년 2월 1일추계)명이다. 도쿄 23특별구에서 400만이 더 추가 되는 셈. 여기에 광역권을 더하면 거의 3,550만까지 바라볼 수 있다고 한다. 오사카 부와 교토 부의 인구는 각각 8,837,032명, 2,609,094명(각각 2016년 2월 1일 추계)으로 중심시에 비해 620만, 115만명이 추가되는 셈이다. 간사이광역권 인구는 도쿄 일대 간토권역권의 절반 가량인 1,900만으로 본다.[71] 그 외 나고야 광역권이 900만(중심시 제외 680만), 후쿠오카 광역권이 250~550만(중심시 제외 110~310만) 정도. 후쿠오카 광역권은 기타큐슈를 포함하느냐에 따라 다르다.
+        <br>
+        <br>
+        이렇게 모두 더한 길이 1,200km의 일본의 "태평양 벨트" 인구는 8,300~8,450만명(150만 규모의 구마모토현 포함시)에 달하며, 이는 일본 전체 인구의 2/3이다. 앞서 광역권을 더하며 6,500만에 달하는데, 나머지 1,800만 가운데는 오카야마 광역권(190만), 간몬 해협 광역권(시모노세키 등 170만), 마에바시 광역권(150만) 등이 있다. 태평양 벨트에 포함되지 않는 10대 도시로는 삿포로와 센다이 정도가 있다.
+        
+    </p>
+    
+    <br><a class ="top_name" id = "5">V. 일정</a><br><br>
+<!--    표-->
+    <table border="1">
+        <tr>
+            <th>날짜</th>
+            <th>시간</th>
+            <th>도시</th>
+            <th>세부 일정</th>
+        </tr>
+        <tr>
+            <td rowspan="5">10/12</td>
+            <td>10:05-11:25</td>
+            <td>인천->후쿠오카</td>
+            <td>인천공항 출발</td>
+        </tr>
+        <tr>
+            <td>12:05-12:25</td>
+            <td>후쿠오카공항->하카타역</td>
+            <td>하카타역 도착</td>
+        </tr>
+        <tr>
+            <td>12:55-14:50</td>
+            <td>하카타->벳부</td>
+            <td>벳부 도착</td>
+        </tr>
+        <tr>
+            <td>이동 30분 가량 소유</td>
+            <td>간나와 온천행<br>(벳부역 동쪽 출구)</td>
+            <td>지옥 온천</td>
+        </tr>
+        <tr>
+            <td>20:30-21:00</td>
+            <td>숙소 이동</td>
+            <td>저녁 식사</td>
+        </tr>
+        <tr>
+            <td rowspan="5">10/13</td>
+            <td>08:00</td>
+            <td>벳부역</td>
+            <td>사파리 관광</td>
+        </tr>
+        <tr>
+            <td>12:00</td>
+            <td>벳부 맛집</td>
+            <td>점심 식사</td>
+        </tr>
+        <tr>
+            <td>14:00-15:30</td>
+            <td>벳부->유후인</td>
+            <td>유후인 도착</td>
+        </tr>
+        <tr>
+            <td>16:00</td>
+            <td>유후인</td>
+            <td>누루카와 료칸</td>
+        </tr>
+        <tr>
+            <td>19:00-20:30</td>
+            <td>유후인->후쿠오카공항</td>
+            <td>귀국 준비</td>
+        </tr>
+    </table>
+    </div>
+<!--    사진갤러리-->
+    <div id="img" class ="section">
+        <a class ="top_name" id = "6">IIV. 사진</a><br>
+        <figure>
+            <img src="./img/japan1.jpg" alt="누루카와">
+            <figcaption>사진 1 : 료칸</figcaption>
+        </figure>
+        <figure>
+            <img src="./img/japan2.jpg" alt="벳부" >
+            <figcaption>사진 2 : 벳부</figcaption>
+        </figure>
+        <figure>
+            <img src="./img/japan3.jpg" alt="벳부" >
+            <figcaption>사진 3 : 시장</figcaption>
+        </figure>
+        <figure>
+            <img src="./img/japan4.jpg" alt="벳부" >
+            <figcaption>사진 4 : 도시</figcaption>
+        </figure>
+        <figure>
+            <img src="./img/japan5.jpg" alt="벳부" >
+            <figcaption>사진 5 : 성</figcaption>
+        </figure>
+    </div>
+    <footer>
+        <div id = "footer">
+            <h6>
+                출처 : <a href=" https://namu.wiki/w/%EC%9D%BC%EB%B3%B8">
+                <del>나무위키:일본</del></a>
+                <p>.Copyright B_21861103_이현동</p>
+            </h6>
+		</div>
+    </footer>
+    </div>
+ </body>
+</html>
