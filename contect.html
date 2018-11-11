@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Homework #1</title>
+    
+     <style>
+        #wrapper { 
+            padding-top: 50pt;
+            max-width: 1000px;
+                margin: auto;
+        }
+/*        로고 고정*/
+        #logo { 
+            display: inline-block;
+            position: fixed;
+            margin: 0;
+        }
+/*         메뉴*/
+        #menu {
+            float: right;
+            padding-top: 0px;
+        }
+        #menu li{
+            display:inline-block;
+            border-width : 1px 1px 1px 5px;
+            border-color : black;
+            border-style : solid;
+            background : -webkit-linear-gradient(bottom, #2a8cff, white);
+			text-align : center;
+            padding: 2px 15px 3px 15px;
+            margin: 0;
+            font-weight: bold;
+        }
+        #menu ul{
+            list-style:none;
+            margin-top: 5px;
+        }
+        #menu a{
+            text-decoration:none;
+            color: #444444;
+            padding: 3px; 
+        }
+        #menu ul :hover {
+            background : -webkit-linear-gradient(bottom, white, #2a8cff);
+        }
+        #title {
+            margin-left: 45%;
+            text-shadow: 8px 15px 6px #98afbe;
+            font-size: 30px;
+            color : #666666;
+         }
+        td, th{
+             border-style: none;
+         }
+        #contect{
+              margin: auto;
+            padding: 10px;
+            font-size: 13px;
+            color : #555555;
+            margin-top: 50px;
+            border-color: #0075ff;
+        }
+        #botton{
+             margin: auto;
+             margin-top: 20px;
+             margin-bottom: 55px;
+            border-style: none;
+        }
+        #botton1{ 
+            font-size: 16px;
+            margin-right: 15px;
+            background-color: #4c9eff;
+            border-style: none;
+            color: #ffffff;
+            padding-top:4px;
+            padding-bottom: 4px;
+        }
+        #botton2{ 
+            font-size: 16px;
+            background-color: #4c9eff;
+            border-style: none;
+            color: #ffffff;
+            padding-top: 4px;
+            padding-bottom: 4px;
+        }
+        #botton :hover{ 
+            background-color: #ffffff;
+            color : #555555;
+        }
+    </style>
+</head>
+<body>
+<!--
+    <h1>문서의 제목</h1>
+
+    <hr>문서의 구분선
+
+    <p>단락 구분</p>
+
+    <strong>중요한 문장</strong>
+
+    <br>줄 바꿈
+
+    <b>텍스트 볼드 처리</b>
+
+    <strong>텍스트 중요 표시</strong>
+
+    <i>텍스트를 이탤릭체로</i>
+
+    <em>텍스트 강조 표시</em>
+
+    <ins>텍스트 밑줄 처리</ins>
+
+    <del>텍스트 가운데 선 처리</del>
+
+    텍스트<sub>아래첨자</sub>텍스트<sup>윗첨자</sup>
+
+    <mark>텍스트에 하이라이트 표시</mark>
+
+    >	&gt;
+    <	&lt;
+        &nbsp;
+-->
+    <!--    헤더-->
+    <header>
+        <div id ="header">
+        <div id= "logo">
+                <a href="index.html">
+                <img src="./img/logo.png" width="45"> </a>
+        </div>
+
+         <div id = "menu">
+            <ul>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="Portfolio.html">Portfolio</a></li>
+                <li><a href="hw01.html">Hw01</a></li>
+                <li><a href="hw02.html">Hw02</a></li>
+                <li><a href="hw03.html">Hw03</a></li>
+                <li><a href="hw04.html">Hw04</a></li>
+                <li><a href="hw05.html">Hw05</a></li>
+                <li><a href="hw06.html">Hw06</a></li>
+                <li><a href="contect.html">Contect</a></li>
+            </ul>    
+        </div>
+        </div>      
+    </header>
+    <div id="wrapper">
+    <h4>[1B 과제] 1B_21861103_이현동</h4>
+    <hr>
+    
+<!--    메인-->
+        <p id="title">Contect<p>
+        <form>
+            <table border="1" id ="contect">
+                <tr>
+                    <td>ID</td>
+                    <td> <input type="text" name="uid"><br></td>
+                </tr>
+                <tr>
+                    <td>PW</td>
+                    <td><input type="password" name="upw"><br></td>
+                </tr>  
+                
+                <tr>
+                        <td>E-mail</td>
+                        <td> <input type='text'> @
+                            <select>
+                                <option value>선택하세요</option>
+                                <option>naver.com</option>
+                                <option>gmail.com</option>
+                                <option>daum.com</option>
+                                <option>직접입력</option>
+                            </select>
+                        </td>
+                    </tr>
+                <tr>
+                    <td>제목</td>
+                    <td><input type="text" name="text"></td>
+                </tr>
+                <tr>
+                    <td>내용</td>
+                    <td> <textarea rows='7' cols='70'></textarea></td>
+                </tr>
+            </table>
+<!--            버튼-->
+            <table id="botton">
+                <td><input type="submit" value="Send" id="botton1"> <input type="submit" value="Reset" id="botton2"> </td>
+            </table>
+        </form>
+    <footer>
+        <hr>
+            <h6>@chordcopper</h6>
+    </footer>
+    </div>
+ </body>
+</html>
