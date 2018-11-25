@@ -1,129 +1,154 @@
 <!doctype html>
-<html>
-<head>
-    <meta charset = "utf-8">
-    <title> 1B_21861103_이현동_직무1 </title>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>@ChordCopper</title>
+		<!--[if lt IE 9]>
+		  <script src="js/html5shiv.min.js"></script>
+		<![endif]-->
+        <link rel="stylesheet" href="./css/jquery.bxslider.min.css">
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/jquery.bxslider.min.js"></script>
+        <script>
+            $(function() {
+                $(".boxslider").bxSlider({
+                    slidthWidth:600,
+                    captions:true,
+                    auto:true,                // 자동실행
+                    autoControls:true,        // 재생 버튼 표시
+                    stopAutoOnclick:true      // 클릭해서 자동실행 멈춤 지정
+                });
+            });
+        </script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+        <script src="https://use.fontawesome.com/926fe18a63.js"></script>
+        <style>
+            #wrapper {
+                width: 600px;
+                margin:0 auto;
+            }    
+        </style>
+<!--
+        화면 너비만큼 영역이 만들어지고 그 안에 이미지 표시
+        영역 좌우에는 화살표가 있고, 영역 아래에는 내비게이션 점 표시
+-->
+  </head>
     
-    <style>
-        h3 {
-            background-color: #2a8cff;
-            color : white;
-        }
-              
-        #mine {
-            width : 500pt;
-            border-radius : 500px 500px 500px 500px;
-        }
-        #wrapper {
-            text-align: center;
-            padding: 5%;            
-        }
-              
-        /*           
-        위치 : 정적 배치 / 절대 배치 / 상대 배치(상대는 가만히 있고 내가 움직인다.) / 고정 배치 
-
-        position : static
-            absolute
-            reletive
-            fixed
-
-        부모가 reletive이면
-        자식은 absolute
-        */
-/*        로고 고정*/
-        #logo { 
-            display: inline-block;
-            position: fixed;
-            margin: 0;
-        }
-/*        메뉴*/
-        #menu {
-            float: right;
-        }
-        #menu li{
-            display:inline-block;
-            border-width : 1px 1px 1px 5px;
-            border-color : black;
-            border-style : solid;
-            background : -webkit-linear-gradient(bottom, #2a8cff, white);
-			text-align : center;
-            padding: 2px 15px 3px 15px;
-            margin: 0;
-            font-weight: bold;
-        }
-        #menu ul{
-            list-style:none;
-            margin-top: 5px;
-        }
-        #menu a{
-            text-decoration:none;
-            color: black;
-            padding: 3px; 
-        }
-        #menu ul :hover {
-            background : -webkit-linear-gradient(bottom, white, #2a8cff);
-        }
-/*        소개*/
-        #section{
-            border : solid 2px #309efd;
-            padding: 30px;
-            margin : 0px 20% 0px 20%;
-        }
-        
-        
-    </style>
-</head>
 <body>
-    
-<!--    헤더-->
-    <header>
-        <div id ="header">
-        <div id= "logo">
+    <div id= "logo">
                 <a href="index.html">
                 <img src="./img/logo.png" width="45"> </a>
-        </div>
-    <!--    메뉴-->
-            <nav>
-                 <div id = "menu">
-                    <ul>
-                        <li><a href="profile.html">Profile</a></li>
-                        <li><a href="Portfolio.html">Portfolio</a></li>
-                        <li><a href="hw01.html">Hw01</a></li>
-                        <li><a href="hw02.html">Hw02</a></li>
-                        <li><a href="hw03.html">Hw03</a></li>
-                        <li><a href="hw04.html">Hw04</a></li>
-                        <li><a href="hw05.html">Hw05</a></li>
-                        <li><a href="hw06.html">Hw06</a></li>
-                        <li><a href="contect.html">Contect</a></li>
-                    </ul>    
-                </div>
-            </nav>
     </div>
-    </header>
-<!--    메인-->
+<!--    메뉴 시작-->
+    <div class="menu">
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="profile.html">About Us</a>
+            </li>
+            <li class="active sub">
+                <a href="#">Homework</a>
+                <ul>
+                    <li class="sub">
+                        <a href="#">HTML</a>
+                        <ul>
+                            <li>
+                                <a href="hw01.html">HW01</a>
+                            </li>
+                            <li>
+                                <a href="hw02.html">HW02</a>
+                            </li>
+                            <li>
+                                <a href="hw03.html">HW03</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sub">
+                        <a href="#">CSS</a>
+                        <ul>
+                            <li>
+                                <a href="hw04.html">HW04</a>
+                            </li>
+                            <li>
+                                <a href="hw05.html">HW05</a>
+                            </li>
+                            <li>
+                                <a href="hw06.html">HW06</a>
+                            </li>
+                            <li>
+                                <a href="hw07.html">HW07</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="last">
+                <a href="contect.html">Contect</a>
+            </li>
+        </ul>
+    </div>
+<!--    캐러셀 시작-->
     <div id="wrapper">
-    <h3>콘텐츠프로그래밍</h3>
-    <h5>디지털미디어디자인과</h5>
-    <h5>1학년 B반 학번 : 21861103</h5>
-    <h5>이현동</h5>
-    <img id = "mine" src="./img/mine1.jpg" alt = "내 사진">
-    <br>
-    <br>
-<!--링크를 새창으로 <a href="hw01.html" target="_blank">과제01</a>-->
-    
-<!--    소개-->
-        <article>
-            <p id="section">
-                안녕하세요, 계원예술대학교 디지털미디어디자인과 1학년에 재학중인 이현동입니다.
-                <br>
-                <br>
-                1999. 12. 4
-                <br>
-                <br>
-                서울시 구로구 개봉동 거주중
-            </p>
-        </article>
+        <div class="boxslider">
+            <div>
+              <img src="./img/things-1.jpeg" title="GATSBY. Mid-term">
+            </div>
+            <div>
+              <img src="./img/things-2.jpeg" title="iPhone. Mid-term">
+            </div>
+            <div>
+              <img src="./img/things-3.jpeg" title="Seoullantern. Mid-term
+. ">
+            </div>         
+            <div>
+                <img src="./img/things-4.jpeg" title="Rem Koolhaas. Mid-term">
+            </div>            
+        </div>
     </div>
+    
+<!-- 개요 section 시작 -->
+    <section class="conB">
+       <div class="container">
+        <div class="text">
+            <img src="./img/logo.png" width="45">
+            <h2>Homework</h2>
+            <p>이안 : "콰-제"</p>
+            <a href="#">MORE... 
+            <span class="fa fa-chevron-right"></span>
+            </a>
+        </div>
+        <div class="text">
+            <img src="./img/logo.png" width="45">
+            <h2>Middle Project</h2>
+            <p>2018. 계원예술대학교 디지털미디어디자인과 콘텐츠프로그래밍B 3/4분기 총합 프로젝트. </p>
+            <a href="mid-term.html.html">MORE... 
+            <span class="fa fa-chevron-right"></span>
+            </a>
+        </div>
+        <div class="text">
+            <img src="./img/logo.png" width="45">
+            </span>
+            <h2>Last Project</h2>
+            <p>2018. 계원예술대학교 디지털미디어디자인과 콘텐츠프로그래밍B 4/4분기 총합 프로젝트. </p>
+            <a href="#">MORE... 
+            <span class="fa fa-chevron-right"></span>
+            </a>
+        </div>                
+      </div>
+    </section>
+    <footer>
+        <hr>
+            <p>Copylight © chordcopper ALL rights reserved.</p>
+            <p>Instagram @chordcopper</p>
+            <p>E-mail discord_@naver.com</p>
+    </footer>
+    
 </body>
 </html>
-
