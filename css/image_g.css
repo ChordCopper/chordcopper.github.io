@@ -1,0 +1,15 @@
+#columns {
+    margin-top: 20px;
+}
+
+section {
+            padding : 20px;
+            margin: 10px;
+            border : dashed 1px black;
+            width: 90%;
+            padding-top: 50pt;
+            max-width: 80%;
+            margin: auto;
+            margin-top: 5%;
+            text-align: center;
+        }
