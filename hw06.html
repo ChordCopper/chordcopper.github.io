@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Homework #6</title>
-    
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
      <style>
         #wrapper { 
             padding-top: 50pt;
@@ -19,7 +20,6 @@
 /*        로고 고정*/
         #logo { 
             display: inline-block;
-            position: fixed;
             margin: 0;
         }
 /*         메뉴*/
@@ -95,19 +95,62 @@
                 <img src="./img/logo.png" width="45"> </a>
         </div>
 
-         <div id = "menu">
-            <ul>
-                <li><a href="profile.html">Profile</a></li>
-                <li><a href="Portfolio.html">Portfolio</a></li>
-                <li><a href="hw01.html">Hw01</a></li>
-                <li><a href="hw02.html">Hw02</a></li>
-                <li><a href="hw03.html">Hw03</a></li>
-                <li><a href="hw04.html">Hw04</a></li>
-                <li><a href="hw05.html">Hw05</a></li>
-                <li><a href="hw06.html">Hw06</a></li>
-                <li><a href="contect.html">Contect</a></li>
-            </ul>    
-        </div>
+         <!--    메뉴 시작-->
+    <div class="menu">
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="profile.html">About Us</a>
+            </li>
+            <li class="active sub">
+                <a href="#">Homework</a>
+                <ul>
+                    <li class="sub">
+                        <a href="#">HTML</a>
+                        <ul>
+                            <li>
+                                <a href="hw01.html">HW01</a>
+                            </li>
+                            <li>
+                                <a href="hw02.html">HW02</a>
+                            </li>
+                            <li>
+                                <a href="hw03.html">HW03</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sub">
+                        <a href="#">CSS</a>
+                        <ul>
+                            <li>
+                                <a href="hw04.html">HW04</a>
+                            </li>
+                            <li>
+                                <a href="hw05.html">HW05</a>
+                            </li>
+                            <li>
+                                <a href="hw06.html">HW06</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="last">
+                <a href="contect.html">Contect</a>
+            </li>
+        </ul>
+    </div>
+    <!--   푸터 아이콘-->
+   <div class="menu-button"><img src="./img/book.png" width="35">
+        <a href="contect.html" target="blank"><img src ="img/information.png" width="35"></a>
+        <a href="portfolio.html" target="blank"><img src ="img/folder.png" width="35"></a>
+        <a href="https://www.instagram.com/chordcopper/" target="blank"><img src ="img/insta.png" width="35"></a>
+    </div> 
         </div>      
     </header>
     <div id="wrapper">
